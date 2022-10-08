@@ -84,5 +84,30 @@ public class Linkedlist{
 		System.out.println("Maximum element : "+maximumElement(rootNode).data);
  
 	}  
+	
+	public static TreeNode createBinarySearchTree()
+	{
+		TreeNode rootNode =new TreeNode(40);
+		TreeNode node14=new TreeNode(14);
+		TreeNode node17=new TreeNode(17);
+		TreeNode node98=new TreeNode(98);
+		TreeNode node74=new TreeNode(74);
+		TreeNode node23=new TreeNode(23);
+		TreeNode node65=new TreeNode(65);
+		TreeNode node07=new TreeNode(07);
+		TreeNode node4=new TreeNode(4);
+ 
+		insert(null,rootNode);
+		insert(rootNode,node14);
+		insert(rootNode,node17);
+		insert(rootNode,node98);
+		insert(rootNode,node74);
+		insert(rootNode,node23);
+		insert(rootNode,node65);
+		insert(rootNode,node07);
+		insert(rootNode,node4);
+ 
+		return rootNode;
+	}
 
 }
