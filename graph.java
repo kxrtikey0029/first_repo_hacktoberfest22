@@ -137,5 +137,37 @@ public class graph {
     {
         System.out.println(s);
     }
+    
+       static int smallest(int[] path)
+    {
+        int min = path[0];
+
+        for (int p : path)
+        {
+            if (p < min)
+            {
+                min = p;
+            }
+        }
+
+        return min;
+    }
+
+   
+    static Boolean visited(int n, int[] path)
+    {
+        Boolean ret = false;
+
+        for (int p : path)
+        {
+            if (p == n)
+            {
+                ret = true;
+                break;
+            }
+        }
+
+        return ret;
+    }
 
 }
