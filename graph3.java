@@ -32,6 +32,15 @@ public class graph3 {
             return count;
         }
 
+          public void dfs(int start, boolean [] visited){
+            visited[start] = true;
+            for (int x = 0; x <adjList[start].size() ; x++) {
+                int vertex = adjList[start].get(x);
+                if(!visited[vertex])
+                    dfs(vertex,visited);
+            }
+        }
+    }
       
 
     public static void main(String[] args) {
